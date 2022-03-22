@@ -1,12 +1,30 @@
 body {
-    background-color: rgba(146, 216, 146, 0.829);
+  background-color: rgba(212, 247, 244, 0.829);
 }
+
 #funcionamento {
-    font-style: italic;
+  font-style: italic;
 }
 
 #criar-tarefa {
-    background-color: rgb(112, 147, 245);
-    border-radius: 15%;
-    color: white;
+  background-color: rgb(78, 122, 241);
+  border: none;
+  color: white;
+  font-size: 15px;
+}
+
+#remover-finalizados {
+  background-color: rgb(73, 202, 73);
+  border: none;
+  color: white;
+}
+
+#apaga-tudo {
+  color: white;
+  border: none;
+  background-color: rgb(245, 71, 71);
+}
+
+.completed {
+  text-decoration: line-through solid black;
 }
