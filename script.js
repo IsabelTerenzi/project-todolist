@@ -7,6 +7,7 @@ const limpaFeitos = document.querySelector('#remover-finalizados');
 
 botaoAdd.addEventListener('click', adicionaTarefa);
 botaoLimpar.addEventListener('click', limpaLista);
+limpaFeitos.addEventListener('click', apagaFeitos);
 
 function criaTarefa(texto) {
   const itemLista = document.createElement('li');
@@ -37,6 +38,13 @@ function ficaCinza(event) {
 
 function ficaRiscado(event) {
   event.target.classList.toggle('completed');
+}
+
+function apagaFeitos() {
+  const itemListaFeito = document.querySelectorAll('.completed');
+  for (let i = 0; i < itemListaFeito.length; i += 1) {
+    itemListaFeito[i].remove();
+  }
 }
 
 window.onload = function () {
