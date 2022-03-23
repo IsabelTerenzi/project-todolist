@@ -5,21 +5,23 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-      <header>
-          <h1>Minha Lista de Tarefas</h1>
-      </header>
-      <section>
-          <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
-      </section>
-      <main>
-          <input type="text" id="texto-tarefa">
-          <button type="button" id="criar-tarefa">Adicionar</button>
-          <ol id="lista-tarefas"></ol>
-      </main>
-      <footer>
-          <button type="button" id="remover-finalizados">Limpar Completos</button>
-          <button type="button" id="apaga-tudo">Limpar Lista</button>
-      </footer>
+    <header>
+      <h1>Minha Lista de Tarefas</h1>
+    </header>
+    <section>
+      <p id="funcionamento">
+        Clique duas vezes em um item para marcá-lo como completo
+      </p>
+    </section>
+    <main class="organiza-main">
+      <input type="text" id="texto-tarefa" />
+      <button type="button" id="criar-tarefa">Adicionar</button>
+      <ol id="lista-tarefas"></ol>
+    </main>
+    <footer>
+      <button type="button" id="remover-finalizados">Limpar Completos</button>
+      <button type="button" id="apaga-tudo">Limpar Lista</button>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

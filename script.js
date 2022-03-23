@@ -3,11 +3,11 @@ let tarefa = '';
 const lista = document.getElementById('lista-tarefas');
 const botaoAdd = document.querySelector('#criar-tarefa');
 const botaoLimpar = document.querySelector('#apaga-tudo');
+const limpaFeitos = document.querySelector('#remover-finalizados');
 
 botaoAdd.addEventListener('click', adicionaTarefa);
 botaoLimpar.addEventListener('click', limpaLista);
 
-//botaoLimparCompletos.addEventListener('click', removeFinalizados);
 function criaTarefa(texto) {
   const itemLista = document.createElement('li');
   itemLista.innerText = texto;
@@ -27,7 +27,7 @@ function adicionaTarefa() {
 }
 
 function limpaLista() {
-  lista.innerHTML = '';
+  lista.innerText = '';
   localStorage.clear();
 }
 
