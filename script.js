@@ -33,8 +33,12 @@ function limpaLista() {
 }
 
 function ficaCinza(event) {
-  event.target.classList.toggle('gray');
-}
+  const itemCinza = document.querySelector('.gray');
+    if (itemCinza) {
+      itemCinza.classList.remove('gray');
+    }
+    event.target.classList.toggle('gray');
+  }
 
 function ficaRiscado(event) {
   event.target.classList.toggle('completed');
